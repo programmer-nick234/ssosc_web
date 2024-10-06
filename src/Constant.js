@@ -21,7 +21,7 @@ const teamMembers = [
     Email: "amshuakharvi66@gmail.com",
     Number: 9380584073,
     LInk: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    imageUrl: "/team/Amshith.jpg",
+    imageUrl: "/team/a.jpg",
   },
   {
     Role: "Web Lead",
@@ -99,31 +99,27 @@ const Events = [
     title: "BUG HUNT",
     description:
       "PARTICIPANTS ARE GIVEN A PIECE OF CODE THAT CONTAINS BUGS. THE CHALLENGE IS TO FIND AND FIX AS MANY BUGS AS POSSIBLE WITHIN A SET TIME LIMIT. THIS CAN BE EXTENDED TO INCLUDE SECURITY VULNERABILITIES AS WELL.",
-    imageUrl:
-      "/event/BugHunt.jpg",
-      tag1:"bugHunt",
-      tag2:"code",
+    imageUrl: "/event/BugHunt.jpg",
+    tag1: "bugHunt",
+    tag2: "code",
   },
 
   {
     title: "REVERSE CODING",
     description:
       "PROVIDE THE PARTICIPANTS WITH THE OUTPUT OF A PROGRAM AND CHALLENGE THEM TO REVERSE-ENGINEER IT TO CREATE THE ORIGINAL PROGRAM THAT PRODUCES THE GIVEN OUTPUT.",
-    imageUrl:
-      "/event/coderelay.jpg",
-      tag1:"Findthelogic",
-      tag2:" Reversecode",
-
+    imageUrl: "/event/coderelay.jpg",
+    tag1: "Findthelogic",
+    tag2: " Reversecode",
   },
 
   {
     title: "CODE RELAY",
     description:
       "TEAMS TAKE TURNS CODING IN A RELAY FORMAT. EACH MEMBER GETS 5-10 MINUTES TO CONTRIBUTE TO THE CODE BEFORE PASSING IT TO THE NEXT MEMBER. THE OBJECTIVE IS TO COLLABORATIVELY BUILD A SMALL PROJECT OR SOLVE A PROBLEM.",
-    imageUrl:
-      "/event/ReverseCoding.jpg",
-      tag1:"Runcode",
-      tag2:  "Teams",
+    imageUrl: "/event/ReverseCoding.jpg",
+    tag1: "Runcode",
+    tag2: "Teams",
   },
 ];
 
