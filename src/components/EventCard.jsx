@@ -10,7 +10,7 @@ const EventCard = () => {
         </h2>
       </div>
       {Events.map((event) => (
-        <div className=" max-w-md  overflow-hidden shadow-xl border-2 mx-5 mt-9 p-3 rounded-lg  transition ease-in-out m-4 hover:-translate-y-1 hover:scale-105 hover:border-4  duration-700  hover:shadow-lg hover:shadow-[#ff7b01] ">
+        <div  key={event.title} className=" max-w-md  overflow-hidden shadow-xl border-2 mx-5 mt-9 p-3 rounded-lg  transition ease-in-out m-4 hover:-translate-y-1 hover:scale-105 hover:border-4  duration-700  hover:shadow-lg hover:shadow-[#ff7b01] ">
           <Image
             src={event.imageUrl}
             alt={event.title}

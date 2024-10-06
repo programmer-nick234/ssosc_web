@@ -32,8 +32,8 @@ const About = () => {
         <div className="md:pl-10 md:pr-0 px-20 md:py-0 py-20 flex items-center justify-center md:w-1/2">
           <Image
             className="lg:p-20 md:px-10 sm:p-10"
-            width={1000}
-            height={1000}
+            width={900}
+            height={900}
             src="/SSOSC.LOGO-WHITE.png"
             alt="about-image"
           />
