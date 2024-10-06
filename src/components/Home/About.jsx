@@ -15,7 +15,7 @@ const About = () => {
     <div className=" flex justify-center items-center my-5 m-[5%] ">
       <div className="flex md:flex-row flex-col justify-between items-center">
         <div className="md:w-1/2">
-          <h1 className="font-montserratB text-9xl md:text-5xl my-5 text-[#ff7b01]">
+          <h1 className="font-montserratB text-[80px] md:text-[48px] lg:text-[64px]text-9xl md:text-5xl my-5 text-[#ff7b01]">
             What we do ?
           </h1>
           <p className=" about font-montserratR text-xl text-justify leading-relaxed">
