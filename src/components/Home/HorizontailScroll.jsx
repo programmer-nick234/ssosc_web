@@ -57,7 +57,7 @@ function HorizontailScroll() {
               height={800}
               alt="1stimage"
               src="/SSOSC.LOGO-WHITE.png"
-              className="max-w-[100vw] max-h-[80vh] m-auto object-containmax-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[100vh] m-auto object-contain"
+              className="max-w-[vw] max-h-[80vh] m-auto object-containmax-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[80vh] m-auto object-contain"
             />
           </section>
           <section
@@ -69,7 +69,7 @@ function HorizontailScroll() {
               height={800}
               src="/event/BugHunt.jpg"
               alt="2ndimage"
-              className="max-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[100vh] m-auto object-contain"
+              className="max-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[80vh] m-auto object-contain"
             />
           </section>
           <section
@@ -81,7 +81,7 @@ function HorizontailScroll() {
               height={800}
               src="/event/ReverseCoding.jpg"
               alt="3ndimage"
-              className="max-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[100vh] m-auto object-contain"
+              className="max-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[80vh] m-auto object-contain"
             />
           </section>
           <section
@@ -93,7 +93,7 @@ function HorizontailScroll() {
               height={800}
               src="/event/coderelay.jpg"
               alt="4ndimage"
-              className="max-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[100vh] m-auto object-contain"
+              className="max-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[80vh] m-auto object-contain"
             />
           </section>
         </div>

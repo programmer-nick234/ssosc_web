@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-1/3 text-white flex-shrink-0 ">
+          <div className="w-full md:w-1/3 text-white flex-shrink-0 mx-auto my-4 md:mx-6 ">
               <Image
               src="/SSOSC.LOGO-WHITE.png"
               alt="logo"

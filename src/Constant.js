@@ -5,7 +5,7 @@ const teamMembers = [
     Email: "shailesh@gmail.com",
     Number: "",
     LInk: "",
-    imageUrl: "/team/shailesh.jpg ",
+    imageUrl: "/team/shailesh.jpg",
   },
   {
     Role: "President",
@@ -43,7 +43,7 @@ const teamMembers = [
     Role: "Design Lead",
     Name: "Abhishek ",
     LInk: "https://github.com/ABHISHEK26-24",
-    imageUrl: "/Abhishek_.jpg",
+    imageUrl: "/team/Abhishek.jpg",
   },
   {
     Role: "Documentation Lead",
