@@ -38,10 +38,10 @@ function HorizontailScroll() {
   }, []);
 
   return (
-    <div className="overflow-hidden flex">
+    <div className="overflow-hidden flex ">
       <div className="overflow-hidden ">
         <span class="font-montserratB text-[80px] md:text-[48px] lg:text-[64px] xl:text-6xl ml-5 md:ml-10 lg:ml-20 my-3 md:my-5 text-[#ff7b01]">
-          Gallery
+          Gallery 
         </span>
         <div
           id="scroll"
