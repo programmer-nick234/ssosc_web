@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed body-font bg-black z-10 w-full">
+    <header className="fixed body-font bg- z-10 w-full">
       <div className="font-montserratR flex justify-between flex-wrap p-5 flex-col md:flex-row items-center md:px-[3.5rem]">
         
         <Link
@@ -63,7 +63,7 @@ const Navbar = () => {
           <Link
             href="/"
             onClick={() => handleLinkClick("home")}
-            className={`  hover:underline focus:underline decoration-chartreuse-100 md:ml-10 lg:ml-20 underline-offset-8 py-1 bg-black rounded-full flex justify-center text-white ${
+            className={`  hover:underline focus:underline decoration-chartreuse-100 md:ml-10 lg:ml-20 underline-offset-8 py-1  rounded-full flex justify-center text-white ${
               activeLink === "home" ? "underline" : ""
             }`}
           >
@@ -73,7 +73,7 @@ const Navbar = () => {
           <Link
             href="/team"
             onClick={() => handleLinkClick("team")}
-            className={`hover:underline focus:underline decoration-chartreuse-100 md:ml-10 lg:ml-20 underline-offset-8 py-1 bg-black rounded-full flex justify-center text-white ${
+            className={`hover:underline focus:underline decoration-chartreuse-100 md:ml-10 lg:ml-20 underline-offset-8 py-1  rounded-full flex justify-center text-white ${
               activeLink === "team" ? "underline" : ""
             }`}
           >
@@ -82,7 +82,7 @@ const Navbar = () => {
           <Link
             href="/events"
             onClick={() => handleLinkClick("events")}
-            className={`hover:underline focus:underline decoration-chartreuse-100 md:ml-10 lg:ml-20 underline-offset-8 py-1 bg-black rounded-full flex justify-center text-white ${
+            className={`hover:underline focus:underline decoration-chartreuse-100 md:ml-10 lg:ml-20 underline-offset-8 py-1  rounded-full flex justify-center text-white ${
               activeLink === "events" ? "underline" : ""
             }`}
           >

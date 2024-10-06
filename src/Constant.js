@@ -1,9 +1,9 @@
 
     const teamMembers=[
      {
-      "Role": "Faculty Adviser",
-      "Name": "shailesh Shetty",
-      "Email": "shailesh @gmail.com",
+      "Role": "Faculty Advisor",
+      "Name": "Shailesh Shetty S",
+      "Email": "shailesh@gmail.com",
       "Number": "",
       "LInk": "",
       "imageUrl":"/team/shailesh.jpg ",
@@ -38,7 +38,7 @@
         "Email": "naiksanjana2423@gmail.com",
         "Number": 9916794022,
         "LInk": "https://github.com/Soumya-M-Naik",
-        "imageUrl":"/team/",
+        "imageUrl":"/team/soumya.jpg",
     },
     {
         "Role": "Design Lead",

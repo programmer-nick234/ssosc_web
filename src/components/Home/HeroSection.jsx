@@ -4,7 +4,6 @@ import Link from "next/link";
 
 const HeroSection = () => {
   useGSAP(() => {
-
     const tl = gsap.timeline();
     tl.from(".head-top", {
       opacity: -1,
@@ -13,13 +12,13 @@ const HeroSection = () => {
     });
     tl.from(".headings", {
       opacity: -1,
-      duration:0.2,
+      duration: 0.2,
       y: 300,
     });
-    tl.from(".dec",{
-      opacity:-1,
-      duration:1,
-      y:300,
+    tl.from(".dec", {
+      opacity: -1,
+      duration: 1,
+      y: 300,
     });
   });
 
@@ -39,7 +38,7 @@ const HeroSection = () => {
             </p>
             <Link
               href="/"
-              className="md:grow clip-path  translate-y-24 form flex mt-7 text-sm justify-center rounded-full items-center bg-chartreuse-200 hover:bg-[#433878] hover:text-white text-black w-[7.25rem] h-[2.125rem]"
+              className="md:grow clip-path  translate-y-24 form flex mt-7 text-sm justify-center rounded-full items-center bg-chartreuse-200 hover:bg-[#ff7b01]  hover:text-white text-[#ff7b01] w-[7.25rem] h-[2.125rem]"
             >
               Learn More
             </Link>
