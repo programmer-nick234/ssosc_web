@@ -13,7 +13,7 @@ const teamMembers = [
     Email: "nethranand1234@gmail.com",
     Number: 9141258313,
     LInk: "https://github.com/Code-Nethranand",
-    imageUrl: "/team/Geddada Nethranand.jpg",
+    imageUrl: "/team/gg.jpg",
   },
   {
     Role: "Treasurer",
