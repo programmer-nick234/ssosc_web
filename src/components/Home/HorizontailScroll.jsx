@@ -40,7 +40,7 @@ function HorizontailScroll() {
   return (
     <div className="overflow-hidden flex">
       <div className="overflow-hidden ">
-      <h1 className="font-montserratB text-9xl ml-20 md:text-5xl my-5 text-[#ff7b01]" >What we do ?</h1>
+      <h1 className="font-montserratB text-9xl ml-20 md:text-5xl my-5 text-[#ff7b01]" >Gallery </h1>
         <div
           id="scroll"
           ref={scroller}
@@ -51,10 +51,11 @@ function HorizontailScroll() {
             className="scroll-part  px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
           >
             <Image
-              width={500}
-              height={500}
+              width={800}
+              height={800}
+              alt="1stimage"
               src='/SSOSC.LOGO-WHITE.png'
-              className="max-w-[70vw] max-h-[60vh] m-auto object-contain"
+              className="max-w-[100vw] max-h-[80vh] m-auto object-contain"
             />
           </section>
           <section
@@ -62,11 +63,11 @@ function HorizontailScroll() {
             className="scroll-part px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
           >
             <Image
-              width={500}
-              height={500}
-              src="https://images.unsplash.com/photo-1618336753974-aae8e04506aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-              alt="2ndimage"
-              className="max-w-[70vw] max-h-[60vh] m-auto object-contain"
+              width={800}
+              height={800}
+              src="/event/BugHunt.jpg"
+               alt="2ndimage"
+              className="max-w-[100vw] max-h-[80vh] m-auto object-contain"
             />
           </section>
           <section
@@ -74,11 +75,11 @@ function HorizontailScroll() {
             className="scroll-part  px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
           >
             <Image
-              width={500}
-              height={500}
-              src="https://images.unsplash.com/photo-1618336753974-aae8e04506aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-              alt="2ndimage"
-              className="max-w-[70vw] max-h-[60vh] m-auto object-contain"
+              width={800}
+              height={800}
+              src="/event/ReverseCoding.jpg"
+              alt="3ndimage"
+              className="max-w-[100vw] max-h-[80vh] m-auto object-contain"
             />
           </section>
           <section
@@ -86,11 +87,11 @@ function HorizontailScroll() {
             className="scroll-part  px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
           >
             <Image
-              width={500}
-              height={500}
-              src="https://images.unsplash.com/photo-1618336753974-aae8e04506aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-              alt="2ndimage"
-              className="max-w-[70vw] max-h-[60vh] m-auto object-contain"
+              width={800}
+              height={800}
+              src="/event/coderelay.jpg"
+              alt="4ndimage"
+              className="max-w-[100vw] max-h-[80vh] m-auto object-contain"
             />
           </section>
         </div>

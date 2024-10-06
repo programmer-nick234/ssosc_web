@@ -8,7 +8,7 @@ const TeamIntroduction = () => {
   return (
     <div className=" min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-6xl font-extrabold text-white text-center my-12">
+        <h2 className="text-6xl font-extrabold text-white text-center my-12 hover:underline">
           Our Awesome Team
         </h2>
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">

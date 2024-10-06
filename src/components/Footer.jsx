@@ -1,15 +1,15 @@
 import Link from "@/components/Links";
 import Image from "next/image";
 
-const githubLink = "https://github.com/";
-const linkedinLink = "https://linkedin.com/";
-const instagramLink = "https://instagram.com/";
-const facebookLink = "https://m.facebook.com/";
+const githubLink = "https://github.com/SSOSC-SIT";
+const linkedinLink = "https://www.linkedin.com/company/ssoscsitmng/ ";
+const instagramLink = "https://www.instagram.com/ssosc.sitmng?utm_source=qr&igsh=Z2xuN3kwbnh4b3V3 ";
+const whatsAppLink = " https://chat.whatsapp.com/BaG97xk50KQ46u5xsV0SU1 ";
 const twitterLink = "https://twitter.com/";
 const youtubeLink = "https://www.youtube.com/";
-const discordLink = "https://discord.gg/";
+const discordLink = "https://discord.gg/yRt9BadFru";
 
-const communityGuidelines = "https://github.com/";
+const communityGuidelines = "https://github.com/SSOSC-SIT";
 
 const Footer = () => {
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
                 <Link href={githubLink} target="_blank" text="GitHub" />
                 <Link href={linkedinLink} target="_blank" text="LinkedIn" />
                 <Link href={instagramLink} target="_blank" text="Instagram" />
-                <Link href={facebookLink} target="_blank" text="Facebook" />
+                <Link href={whatsAppLink} target="_blank" text="WhatsApp" />
                 <Link href={twitterLink} target="_blank" text="Twitter" />
               </div>
             </div>
@@ -50,14 +50,14 @@ const Footer = () => {
             <p className="font-bold pt-4">Srinivas Student Open-Source Community</p>
             <p className="pt-2">
               Srinivas Institute of Technology, Valachil, Mangalore -
-              575007
+              574143
             </p>
             <Link
               target="_blank"
-              text="ssosc@sit.mng.in"
-              href="mailto:ssosc@sit.mng.in"
+              text="ssosc@sitmng.ac.in"
+              href="mailto:ssosc@sitmng.ac.in"
             />
-            <p className="pt-2">+91 </p>
+            <p className="pt-2">+91 9141258312</p>
           </div>
         </div>
         <div className="text-white bg-black">

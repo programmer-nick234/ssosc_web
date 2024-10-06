@@ -32,9 +32,10 @@ const HeroSection = () => {
           </div>{" "}
           <div className="dec">
             <p className="  md:grow clip-path  translate-y-24 form grow font-montserratR lg:w-[50rem] pt-5 text-white">
-              A community driven by tech enthusiasts and open-source
-              contributors, to help young students to be part of the open-source
-              ecosystem by providing training and skill development.
+              A collaborative community of tech enthusiasts and open-source
+              advocates, dedicated to empowering young students by offering
+              training and skill development, fostering their integration into
+              the open-source ecosystem.
             </p>
             <Link
               href="/"
