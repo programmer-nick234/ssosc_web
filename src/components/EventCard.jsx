@@ -1,16 +1,30 @@
+"use client"; // Ensure this is a Client Component
+
 import Image from "next/image";
 import React from "react";
+import { useRouter } from "next/navigation"; // Updated to next/navigation
 import { Events } from "@/Constant";
+
 const EventCard = () => {
+  const router = useRouter();
+
+  const handleCardClick = (slug) => {
+    router.push(`/events/${slug}`); // Redirects to /events/[slug]
+  };
+
   return (
     <>
-      <div  className="w-full ">
+      <div className="w-full">
         <h2 className="text-7xl z-50 font-extrabold text-white text-center mb-24 hover:underline mt-20">
-          Up Comming Events
+          Upcoming Events
         </h2>
       </div>
       {Events.map((event) => (
-        <div  key={event.title} className=" max-w-md  overflow-hidden shadow-xl border-2 mx-5 mt-9 p-3 rounded-lg  transition ease-in-out m-4 hover:-translate-y-1 hover:scale-105 hover:border-4  duration-700  hover:shadow-lg hover:shadow-[#ff7b01] ">
+        <div
+          key={event.title}
+          onClick={() => handleCardClick(event.slug)} // Call redirection on click
+          className="max-w-md overflow-hidden shadow-xl border-2 mx-5 mt-9 p-3 rounded-lg transition ease-in-out m-4 hover:-translate-y-1 hover:scale-105 hover:border-4 duration-700 hover:shadow-lg hover:shadow-[#ff7b01] cursor-pointer"
+        >
           <Image
             src={event.imageUrl}
             alt={event.title}
