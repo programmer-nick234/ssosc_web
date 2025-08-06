@@ -155,6 +155,4 @@ export const newEvents = [
 }
 ];
 
-
-
 export { teamMembers, Events };
