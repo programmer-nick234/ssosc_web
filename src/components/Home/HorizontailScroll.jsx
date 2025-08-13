@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -27,7 +26,6 @@ function HorizontailScroll() {
         invalidateOnRefresh: true,
         anticipatePin: 1,
         snap: 1 / (scrollLevel.length - 1),
-
         end: () => "+=" + window.innerWidth,
       },
     });
@@ -38,64 +36,120 @@ function HorizontailScroll() {
   }, []);
 
   return (
-    <div className="overflow-hidden flex ">
-      <div className="overflow-hidden ">
-        <span class="font-montserratB text-[80px] md:text-[48px] lg:text-[64px] xl:text-6xl ml-5 md:ml-10 lg:ml-20 my-3 md:my-5 text-[#ff7b01]">
-          Gallery 
-        </span>
-        <div
-          id="scroll"
-          ref={scroller}
-          className=" flex overflow-x-hidden text-white w-[400vw] m-0  relative h-screen"
-        >
-          <section
-            ref={scroll}
-            className="scroll-part px-4 sm:px-8 md:px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
+    <div className="relative py-20 overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-black/5"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#ff7b01]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-orange-400/3 rounded-full blur-3xl"></div>
+      
+      <div className="relative z-10">
+        {/* Section Header */}
+        <div className="text-center mb-16 px-4">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#ff7b01] mb-6">
+            Our Gallery
+          </h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-[#ff7b01] to-orange-400 mx-auto rounded-full shadow-lg shadow-[#ff7b01]/50 mb-8"></div>
+          <p className="text-xl text-white/80 max-w-2xl mx-auto">
+            Explore the vibrant moments and achievements from our community events and activities
+          </p>
+        </div>
+        
+        {/* Gallery Container */}
+        <div className="overflow-hidden">
+          <div
+            id="scroll"
+            ref={scroller}
+            className="flex overflow-x-hidden text-white w-[400vw] m-0 relative h-screen"
           >
-            <Image
-              width={800}
-              height={800}
-              alt="1stimage"
-              src="/SSOSC.LOGO-WHITE.png"
-              className="max-w-[vw] max-h-[80vh] m-auto object-containmax-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[80vh] m-auto object-contain"
-            />
-          </section>
-          <section
-            ref={scroll}
-            className="scroll-part px-4 sm:px-8 md:px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
-          >
-            <Image
-              width={800}
-              height={800}
-              src="/event/BugHunt.jpg"
-              alt="2ndimage"
-              className="max-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[80vh] m-auto object-contain"
-            />
-          </section>
-          <section
-            ref={scroll}
-            className="scroll-part px-4 sm:px-8 md:px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
-          >
-            <Image
-              width={800}
-              height={800}
-              src="/event/ReverseCoding.jpg"
-              alt="3ndimage"
-              className="max-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[80vh] m-auto object-contain"
-            />
-          </section>
-          <section
-            ref={scroll}
-            className="scroll-part px-4 sm:px-8 md:px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
-          >
-            <Image
-              width={800}
-              height={800}
-              src="/event/coderelay.jpg"
-              alt="4ndimage"
-              className="max-w-[100vw] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[90vh] xl:max-h-[80vh] m-auto object-contain"
-            />
-          </section>
+            {/* Gallery Item 1 - SSOSC Logo */}
+            <section className="scroll-part px-4 sm:px-8 md:px-12 w-screen h-full bg-transparent flex items-center justify-center">
+              <div className="text-center space-y-6">
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#ff7b01]/20 to-orange-500/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+                  <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-12 border border-white/20 shadow-2xl">
+                    <Image
+                      width={600}
+                      height={600}
+                      alt="SSOSC Logo"
+                      src="/SSOSC.LOGO-WHITE.png"
+                      className="max-w-[60vw] max-h-[60vh] object-contain transform group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-white">SSOSC Community</h3>
+                <p className="text-white/70 text-lg max-w-md mx-auto">Building the future of open source technology</p>
+              </div>
+            </section>
+            
+            {/* Gallery Item 2 - Bug Hunt */}
+            <section className="scroll-part px-4 sm:px-8 md:px-12 w-screen h-full bg-transparent flex items-center justify-center">
+              <div className="text-center space-y-6">
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#ff7b01]/20 to-orange-500/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+                  <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/20 shadow-2xl overflow-hidden">
+                    <Image
+                      width={800}
+                      height={800}
+                      src="/event/BugHunt.jpg"
+                      alt="Bug Hunt Event"
+                      className="max-w-[70vw] max-h-[70vh] object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-white">Bug Hunt Challenge</h3>
+                <p className="text-white/70 text-lg max-w-md mx-auto">Find and fix bugs in code within time limits</p>
+              </div>
+            </section>
+            
+            {/* Gallery Item 3 - Reverse Coding */}
+            <section className="scroll-part px-4 sm:px-8 md:px-12 w-screen h-full bg-transparent flex items-center justify-center">
+              <div className="text-center space-y-6">
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#ff7b01]/20 to-orange-500/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+                  <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/20 shadow-2xl overflow-hidden">
+                    <Image
+                      width={800}
+                      height={800}
+                      src="/event/ReverseCoding.jpg"
+                      alt="Reverse Coding Event"
+                      className="max-w-[70vw] max-h-[70vh] object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-white">Reverse Coding</h3>
+                <p className="text-white/70 text-lg max-w-md mx-auto">Reverse-engineer programs from their output</p>
+              </div>
+            </section>
+            
+            {/* Gallery Item 4 - Code Relay */}
+            <section className="scroll-part px-4 sm:px-8 md:px-12 w-screen h-full bg-transparent flex items-center justify-center">
+              <div className="text-center space-y-6">
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#ff7b01]/20 to-orange-500/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+                  <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/20 shadow-2xl overflow-hidden">
+                    <Image
+                      width={800}
+                      height={800}
+                      src="/event/coderelay.jpg"
+                      alt="Code Relay Event"
+                      className="max-w-[70vw] max-h-[70vh] object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-white">Code Relay</h3>
+                <p className="text-white/70 text-lg max-w-md mx-auto">Team collaboration in coding challenges</p>
+              </div>
+            </section>
+          </div>
+        </div>
+        
+        {/* Scroll Indicator */}
+        <div className="text-center mt-8">
+          <div className="inline-flex items-center space-x-2 text-white/60">
+            <div className="w-2 h-2 bg-[#ff7b01] rounded-full animate-pulse"></div>
+            <span className="text-sm">Scroll to explore</span>
+            <div className="w-2 h-2 bg-[#ff7b01] rounded-full animate-pulse delay-1000"></div>
+          </div>
         </div>
       </div>
     </div>

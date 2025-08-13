@@ -131,14 +131,13 @@ const Events = [
     description:
       "🌟 Srinathon 2024 was a thrilling 24-hour national-level Hackathon hosted by Srinivas Institute of Technology, Valachil, Mangalore — in association with SSOSC, EDP, and Yuktih Cell. This high-energy event brought together tech enthusiasts and innovators from across India to build impactful solutions in just 24 hours.",
     subtitle:
-    "Prize pool up to ₹1 Lakh • ₹400 per participant • 4 members per team • Held on December 10th–11th, 2024",
-  imageUrl: "/event/srinathon.jpg",
-  thumbnail: "/event/srinathon.jpg",
-  // Ensure this is stored in /public/event/srinathon.jpg
-  tag1: "HACKATHON",
-  tag2: "CODE",
-}
-
+      "Prize pool up to ₹1 Lakh • ₹400 per participant • 4 members per team • Held on December 10th–11th, 2024",
+    imageUrl: "/event/srinathon.jpg",
+    thumbnail: "/event/srinathon.jpg",
+    // Ensure this is stored in /public/event/srinathon.jpg
+    tag1: "HACKATHON",
+    tag2: "CODE",
+  },
 ];
 
 export const newEvents = [
@@ -152,6 +151,7 @@ export const newEvents = [
   imageUrl: "/event/ideathon.jpg", // Ensure this is stored in /public/event/ideathon.jpg
   tag1: "IDEATION",
   tag2: "INNOVATION",
+  date: "2024-12-10"
 }
 ];
 
